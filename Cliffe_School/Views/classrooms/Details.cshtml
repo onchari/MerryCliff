@@ -1,0 +1,67 @@
+﻿@model Cliffe_School.Models.classroom
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>classroom</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.year)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.year)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.section)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.section)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.remarks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.remarks)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.grade.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.grade.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.teacher.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.teacher.email)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.classroom_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

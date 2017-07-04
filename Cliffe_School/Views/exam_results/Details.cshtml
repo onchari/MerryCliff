@@ -1,0 +1,43 @@
+﻿@model Cliffe_School.Models.exam_results
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>exam_results</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.marks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.marks)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.course.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.course.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.student.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.student.email)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.exam_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

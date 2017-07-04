@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f6a20aff5d214373af3ca53e14bad09d" Name="Diagram1">
+        <EntityTypeShape EntityType="merry_cliff_academyModel.attendance" Width="1.5" PointX="5.25" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="merry_cliff_academyModel.classroom" Width="1.5" PointX="9" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="merry_cliff_academyModel.classroom_student" Width="1.5" PointX="5.25" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="merry_cliff_academyModel.course" Width="1.5" PointX="6" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="merry_cliff_academyModel.exam_results" Width="1.5" PointX="8.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="merry_cliff_academyModel.exam_type" Width="1.5" PointX="7.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="merry_cliff_academyModel.exam" Width="1.5" PointX="10" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="merry_cliff_academyModel.grade" Width="1.5" PointX="3.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="merry_cliff_academyModel.parent" Width="1.5" PointX="0.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="merry_cliff_academyModel.student" Width="1.5" PointX="3" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="merry_cliff_academyModel.teacher" Width="1.5" PointX="6.75" PointY="13.5" IsExpanded="true" />
+        <AssociationConnector Association="merry_cliff_academyModel.FK_attendance_students" ManuallyRouted="false" />
+        <AssociationConnector Association="merry_cliff_academyModel.FK_classroom_grade" ManuallyRouted="false" />
+        <AssociationConnector Association="merry_cliff_academyModel.FK_classroom_teachers" ManuallyRouted="false" />
+        <AssociationConnector Association="merry_cliff_academyModel.FK_classroom_student_students" ManuallyRouted="false" />
+        <AssociationConnector Association="merry_cliff_academyModel.FK_course_grade" ManuallyRouted="false" />
+        <AssociationConnector Association="merry_cliff_academyModel.FK_exam_results_course" ManuallyRouted="false" />
+        <AssociationConnector Association="merry_cliff_academyModel.FK_exam_results_students" ManuallyRouted="false" />
+        <AssociationConnector Association="merry_cliff_academyModel.FK_exams_exam_type" ManuallyRouted="false" />
+        <AssociationConnector Association="merry_cliff_academyModel.FK_students_parents" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
